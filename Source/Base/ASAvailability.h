@@ -72,13 +72,13 @@
 // If Yoga is available, make it available anywhere we use ASAvailability.
 // This reduces Yoga-specific code in other files.
 // NOTE: Yoga integration is experimental and not fully tested. Use with caution and test layouts carefully.
-#ifndef YOGA_HEADER_PATH
-  #define YOGA_HEADER_PATH <yoga/Yoga.h>
-#endif
-
-#ifndef YOGA
-  #define YOGA __has_include(YOGA_HEADER_PATH)
-#endif
+//#ifndef YOGA_HEADER_PATH
+//  #define YOGA_HEADER_PATH <yoga/Yoga.h>
+//#endif
+//
+//#ifndef YOGA
+//  #define YOGA __has_include(YOGA_HEADER_PATH)
+//#endif
 
 #ifdef ASTEXTNODE_EXPERIMENT_GLOBAL_ENABLE
   #error "ASTEXTNODE_EXPERIMENT_GLOBAL_ENABLE is unavailable. See ASConfiguration.h."
